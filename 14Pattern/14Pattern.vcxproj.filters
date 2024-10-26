@@ -53,5 +53,8 @@
     <ClInclude Include="Cyclic-Sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Sliding-Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
