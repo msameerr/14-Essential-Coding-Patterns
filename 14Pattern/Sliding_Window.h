@@ -3,8 +3,8 @@
 using namespace std;
 #pragma once
 
-#ifndef SLIDING-WINDOW
-#define SLIDING-WINDOW
+#ifndef SLIDING_WINDOW
+#define SLIDING_WINDOW
 
 void AverageOfSubArrayofSizeK(vector<int>arr, int k);
 

@@ -143,17 +143,17 @@
     <ClCompile Include="Fast-Slow-Pointers.cpp" />
     <ClCompile Include="LinkedList-Reversal.cpp" />
     <ClCompile Include="Merge-Intervals.cpp" />
-    <ClCompile Include="Sliding-Window.cpp" />
+    <ClCompile Include="Sliding_Window.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Subsets.cpp" />
     <ClCompile Include="Traversal-BFS.cpp" />
     <ClCompile Include="Traversal-DFS.cpp" />
     <ClCompile Include="Two-Heaps.cpp" />
-    <ClCompile Include="Two-Pointers.cpp" />
+    <ClCompile Include="Two_Pointers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cyclic-Sort.h" />
-    <ClInclude Include="Sliding-Window.h" />
+    <ClInclude Include="Sliding_Window.h" />
+    <ClInclude Include="Two_Pointers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
