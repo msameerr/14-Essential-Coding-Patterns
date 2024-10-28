@@ -36,3 +36,26 @@ void PairExist(vector<int>arr, int S)
 		cout << "Not Found";
 
 }
+
+
+// Question 02 : Reverse Array
+
+void ReverseArray(vector<int>&arr)
+{
+
+	int n = arr.size();
+	int i = 0;
+	int j = n - 1;
+
+	while (i < j)
+	{
+		swap(arr[i], arr[j]);
+		i++;
+		j--;
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+}

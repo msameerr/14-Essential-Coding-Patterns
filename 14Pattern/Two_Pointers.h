@@ -8,4 +8,6 @@ using namespace std;
 
 void PairExist(vector<int>v, int Sum);
 
+void ReverseArray(vector<int>& arr);
+
 #endif
