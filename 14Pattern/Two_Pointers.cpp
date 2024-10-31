@@ -59,3 +59,49 @@ void ReverseArray(vector<int>&arr)
 		cout << arr[i] << " ";
 	}
 }
+
+
+// Question 03 : Merge Two Sorted Array
+
+void MergeSortedArray(vector<int> A, vector<int> B, int n1, int n2, int C[])
+{
+	int i = 0;
+	int j = 0;
+	int k = 0;
+
+	while (i < n1 && j < n2)
+	{
+		if (A[i] < B[j])
+		{
+			C[k] = A[i];
+			i++;
+			k++;
+		}
+		else
+		{
+			C[k] = B[j];
+			j++;
+			k++;
+		}
+	}
+
+	while (i < n1)
+	{
+		C[k] = A[i];
+		i++;
+		k++;
+	}
+
+	while (j < n2)
+	{
+		C[k] = B[j];
+		j++;
+		k++;
+	}
+
+	for (int i = 0; i < k; i++)
+	{
+		cout << C[i] << " ";
+	}
+
+}

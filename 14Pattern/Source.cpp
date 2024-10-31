@@ -10,6 +10,10 @@ int main()
 {
 	cout << "14 Patterns to Ace Any Coding Interview Question" << endl;
 
-	vector<int>v = { 1,2,3,4,5 };
-	ReverseArray(v);
+	vector<int>A = { 1,3,5 };
+	vector<int>B = { 2,4,6 };
+	int C[100];
+
+	MergeSortedArray(A,B,3,3,C);
+	
 }
