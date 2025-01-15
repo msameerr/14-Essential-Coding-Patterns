@@ -62,6 +62,9 @@ void ReverseArray(vector<int>&arr)
 
 
 // Question 03 : Merge Two Sorted Array
+// vector<int>A = { 1,3,5 };
+// vector<int>B = { 2,4,6 };
+// C = {1,2,3,4,5,6}
 
 void MergeSortedArray(vector<int> A, vector<int> B, int n1, int n2, int C[])
 {
@@ -105,3 +108,39 @@ void MergeSortedArray(vector<int> A, vector<int> B, int n1, int n2, int C[])
 	}
 
 }
+
+// Question 04 : Remove Duplicates from Sorted Array
+// v = {0,0,1,1,1,2,2,2,2,3}
+// v = {0,1,2,3}, size = 4
+
+int RemoveDuplicates(vector<int>& nums)
+{
+
+	int n = nums.size();
+
+	int i = 0;
+	int j = i + 1;
+
+	while (j < n)
+	{
+
+		if (nums[i] != nums[j])
+		{
+			i++;
+			nums[i] = nums[j];
+		}
+
+		j++;
+
+	}
+
+	int size = i + 1;
+	return size;
+
+}
+
+
+// Question 05 : Squares of Sorted Array 
+// v = {-4,-1,0,3,10}
+// output = {0,1,9,16,100}
+

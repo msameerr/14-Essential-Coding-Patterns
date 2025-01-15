@@ -12,4 +12,6 @@ void ReverseArray(vector<int>& arr);
 
 void MergeSortedArray(vector<int> A, vector<int> B, int n1, int n2, int C[]);
 
+int RemoveDuplicates(vector<int>& nums);
+
 #endif
