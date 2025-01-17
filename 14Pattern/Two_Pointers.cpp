@@ -144,3 +144,36 @@ int RemoveDuplicates(vector<int>& nums)
 // v = {-4,-1,0,3,10}
 // output = {0,1,9,16,100}
 
+void sorted_Squares(vector<int>& nums)
+{
+
+	int n = nums.size();
+	int left = 0;
+	int right = n - 1;
+
+	int ans[10];
+
+	for(int i = n-1 ; i >= 0; i--)
+	{
+
+
+		if (abs(nums[left]) > abs(nums[right]))
+		{
+			ans[i] = abs(nums[left]) * abs(nums[left]);
+			left++;
+		}
+		else
+		{
+			ans[i] = abs(nums[right]) * abs(nums[right]);
+			right--;
+		}
+
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << ans[i] << " ";
+	}
+}
+
+// Question 06 : 
