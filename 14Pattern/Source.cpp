@@ -11,8 +11,8 @@ int main()
 	cout << "14 Patterns to Ace Any Coding Interview Question" << endl;
 
 
-	vector<int> nums = { -1, 0, 1, 2, -1, -4 };
-	threeSum(nums);
+	vector<int> nums = { -1, 2,3,4};
+	threeSumCloset(nums,5);
 
 
 }

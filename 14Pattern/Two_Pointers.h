@@ -18,4 +18,6 @@ void sorted_Squares(vector<int>& nums);
 
 void threeSum(vector<int> nums);
 
+void threeSumCloset(vector<int> nums, int target);
+
 #endif

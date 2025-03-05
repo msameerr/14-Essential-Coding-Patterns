@@ -248,3 +248,39 @@ void threeSum(vector<int> nums)
 	}
 
 }
+
+
+// Question 07 : 3-Sum Closet
+// nums = {-1, 2, 3, 4}, target = 5
+// Output = 5 -> "three int sum which is nearest or equal to target"
+void threeSumCloset(vector<int> nums, int target)
+{
+
+	int n = nums.size();
+	sort(nums.begin(), nums.end());
+
+	int ans = nums[0] + nums[1] + nums[2];
+
+	for (int i = 0; i < n; i++)
+	{
+
+		int l = i + 1;
+		int r = n - 1;
+
+		while (l < r)
+		{
+			int sum = nums[i] + nums[l] + nums[r];
+
+			if (abs(sum - target) < abs(ans - target))
+				ans = sum;
+			else if (sum < target)
+				l++;
+			else
+				r--;
+		}
+
+	}
+
+	cout << "Output : " << ans;
+
+}
