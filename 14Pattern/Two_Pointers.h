@@ -16,4 +16,6 @@ int RemoveDuplicates(vector<int>& nums);
 
 void sorted_Squares(vector<int>& nums);
 
+void threeSum(vector<int> nums);
+
 #endif

@@ -11,8 +11,8 @@ int main()
 	cout << "14 Patterns to Ace Any Coding Interview Question" << endl;
 
 
-	vector<int>  v = { -4,-1,0,3,10 };
-	sorted_Squares(v);
+	vector<int> nums = { -1, 0, 1, 2, -1, -4 };
+	threeSum(nums);
 
 
 }

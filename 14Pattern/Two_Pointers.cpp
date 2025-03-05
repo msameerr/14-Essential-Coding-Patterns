@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 using namespace std;
 
@@ -176,4 +177,74 @@ void sorted_Squares(vector<int>& nums)
 	}
 }
 
-// Question 06 : 
+// Question 06 : 3-Sum
+// nums = {-1, 0, 1, 2, -1, -4}
+// Task -> (nums[i] + nums[l] + nums[r]) == 0
+// ans = { {-1, -1, 2}, {-1, 0, 1} }
+void threeSum(vector<int> nums)
+{
+	int n = nums.size();
+	vector<vector<int>> ans;
+
+	sort(nums.begin(), nums.end());
+
+	for (int i = 0; i < n; i++)
+	{
+
+		if ((i > 0) && (nums[i] == nums[i - 1]))
+		{
+			continue;
+		}
+
+		int l = i + 1;
+		int r = n - 1;
+
+		while (l < r)
+		{
+
+			int sum = nums[i] + nums[l] + nums[r];
+
+			if (sum > 0)
+			{
+				r--;
+			}
+			else if (sum < 0)
+			{
+				l++;
+			}
+			else
+			{
+				ans.push_back({nums[i], nums[l], nums[r]});
+
+				while (nums[l] == nums[l + 1])
+				{
+					l++;
+				}
+
+				while (nums[r] == nums[r - 1])
+				{
+					r--;
+				}
+
+				l++;
+				r--;
+			}
+
+		}
+
+	}
+
+
+	for (int i = 0; i < ans.size(); i++)
+	{
+		cout << "{ ";
+
+		for (int j = 0; j < ans[i].size(); j++)
+		{
+			cout << ans[i][j] << ", ";
+		}
+
+		cout << "} " << endl;
+	}
+
+}
