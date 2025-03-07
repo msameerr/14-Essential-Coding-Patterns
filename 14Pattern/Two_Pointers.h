@@ -20,4 +20,6 @@ void threeSum(vector<int> nums);
 
 void threeSumCloset(vector<int> nums, int target);
 
+void CountTriplets(vector<int> nums, int value);
+
 #endif

@@ -284,3 +284,43 @@ void threeSumCloset(vector<int> nums, int target)
 	cout << "Output : " << ans;
 
 }
+
+
+// Question 08 : Counts triplets with sum smaller than a given value
+// nums = {-2, 0, 1, 3}, value = 2
+// Output = 2
+// Reason = (-2, 0, 1), (-2, 0, 3)
+
+void CountTriplets(vector<int> nums, int value)
+{
+	int n = nums.size();
+	int ans = 0;
+
+	for (int i = 0; i < n; i++)
+	{
+
+		int left = i + 1;
+		int right = n - 1;
+
+		while (left < right)
+		{
+
+			int sum = nums[i] + nums[left] + nums[right];
+			
+
+			if (sum >= value)
+			{
+				right--;
+			}
+			else
+			{
+				ans += (right - left);
+				left++;
+			}
+
+		}
+
+	}
+
+	cout << ans;
+}

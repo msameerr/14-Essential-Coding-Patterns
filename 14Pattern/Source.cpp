@@ -11,8 +11,9 @@ int main()
 	cout << "14 Patterns to Ace Any Coding Interview Question" << endl;
 
 
-	vector<int> nums = { -1, 2,3,4};
-	threeSumCloset(nums,5);
+	vector<int> nums = { -2, 0, 1, 3 };
+	int value = 2;
+	CountTriplets(nums,value);
 
 
 }
