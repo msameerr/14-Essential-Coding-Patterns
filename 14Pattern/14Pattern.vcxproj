@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sliding_Window.h" />
+    <ClInclude Include="Subsets.h" />
     <ClInclude Include="Two_Pointers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

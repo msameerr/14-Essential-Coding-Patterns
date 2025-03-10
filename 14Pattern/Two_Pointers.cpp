@@ -152,7 +152,7 @@ void sorted_Squares(vector<int>& nums)
 	int left = 0;
 	int right = n - 1;
 
-	int ans[10];
+	int ans[10] = { 0,0,0,0,0,0,0,0,0,0 };
 
 	for(int i = n-1 ; i >= 0; i--)
 	{
