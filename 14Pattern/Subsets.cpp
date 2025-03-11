@@ -3,8 +3,11 @@
 
 using namespace std;
 
-vector<vector<int>> AllSubsets;
+// Question : Create subsets of array
+// input : {1,2}
+// subsets : {}, {1}, {2}, {1,2}
 
+vector<vector<int>> AllSubsets;
 
 void backTrack(int eachSize, int index, vector<int> curr, vector<int>nums)
 {
